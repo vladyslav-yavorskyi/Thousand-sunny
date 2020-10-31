@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.wrapper .container {
+  width: 1380px;
+  margin: 0 auto;
+}
+
+.wrapper .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+}
+
+.wrapper .container .navbar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .container .navbar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .container .navbar__link li {
+  padding: 0 17px;
+}
+
+.wrapper .container .navbar__link li .navbar__link_active {
+  font-weight: 500;
+  color: #202336;
+}
+
+.wrapper .container .navbar__link li a {
+  color: #b8becd;
+  font-size: 16px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.wrapper .container .navbar__link li a:hover {
+  color: #202336;
+}
+
+.wrapper .container .navbar__button button {
+  padding: 8px 42px;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  margin-left: 18px;
+}
+
+.wrapper .container .navbar__button_log {
+  background-color: #fff;
+  color: #fb8f1d;
+  -webkit-transition: all ease-in-out 0.35s;
+  transition: all ease-in-out 0.35s;
+}
+
+.wrapper .container .navbar__button_log:hover {
+  background-color: #fb8f1d;
+  color: #fff;
+}
+
+.wrapper .container .navbar__button_reg {
+  background-color: #fb8f1d;
+  color: #fff;
+  -webkit-transition: all ease-in-out 0.35s;
+  transition: all ease-in-out 0.35s;
+}
+
+.wrapper .container .navbar__button_reg:hover {
+  background-color: #fff;
+  color: #fb8f1d;
+}
+
+.wrapper .container .title {
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+
+.wrapper .container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 115px;
+}
+
+.wrapper .container .main__title {
+  font-size: 64px;
+  color: #202336;
+  line-height: 80px;
+}
+
+.wrapper .container .main__subtitle {
+  padding-top: 75px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #202336;
+}
+
+.wrapper .container .main__subtitle::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 32px;
+  margin-top: 20px;
+  background-color: #202336;
+  margin-bottom: 50px;
+}
+
+.wrapper .container .main__container {
+  width: 470px;
+}
+
+.wrapper .container .main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper .container .main .select {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  margin: 15px 0px 15px 0px;
+}
+
+.wrapper .container .main .select.open .select__dropdown {
+  display: block;
+}
+
+.wrapper .container .main .select.open .select__backdrop {
+  display: block;
+}
+
+.wrapper .container .main .select__placeholder {
+  color: #4a4c53;
+  font-size: 15px;
+}
+
+.wrapper .container .main .select__input {
+  background-color: #fff;
+  border: 0.8px solid #afb0b9;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.wrapper .container .main .select__input i {
+  color: #afb0b9;
+}
+
+.wrapper .container .main .select__backdrop {
+  z-index: 0;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+.wrapper .container .main .select__dropdown {
+  display: none;
+  position: absolute;
+  border: 0.8px solid #afb0b9;
+  color: #4a4c53;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 84%;
+  max-height: 200px;
+  overflow-y: auto;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.wrapper .container .main .select__list {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper .container .main .select__item {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper .container .main .select__item.selected {
+  background-color: lightgoldenrodyellow;
+}
+
+.wrapper .container .main .select__item:hover {
+  -webkit-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+  background-color: #ccc;
+}
+
+.wrapper .container .main__btn {
+  background: #fb8f1d;
+  border-radius: 8px;
+  color: #fff;
+  padding: 15px 60px;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 45px;
+  -webkit-transition: all ease-in-out 0.35s;
+  transition: all ease-in-out 0.35s;
+  border: 1px solid #fb8f1d;
+}
+
+.wrapper .container .main__btn:hover {
+  background-color: #fff;
+  color: #fb8f1d;
+}
+
+
+/*# sourceMappingURL=/styles.956d002c.css.map */
