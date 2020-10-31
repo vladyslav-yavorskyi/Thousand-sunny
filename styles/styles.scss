@@ -78,20 +78,40 @@ h6 {
 $orange: #fb8f1d;
 $dark: #202336;
 
+.button {
+  background: $orange;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 17px;
+  transition: all ease-in-out 0.35s;
+  border: 1px solid $orange;
+
+  &:hover {
+    background-color: #fff;
+    color: $orange;
+  }
+}
+
+.title {
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
 
-  .content {
-    flex: 1 1 auto;
-  }
-
   .container {
     width: 1380px;
     margin: 0 auto;
+  }
 
+  .content {
+    flex: 1 1 auto;
     .navbar {
       display: flex;
       align-items: center;
@@ -158,11 +178,6 @@ $dark: #202336;
           }
         }
       }
-    }
-
-    .title {
-      font-family: Playfair Display;
-      font-weight: bold;
     }
 
     .main {
@@ -291,22 +306,43 @@ $dark: #202336;
           }
         }
       }
-      &__btn {
-        background: $orange;
-        border-radius: 8px;
-        color: #fff;
-        padding: 15px 60px;
-        font-family: Mulish;
-        font-weight: bold;
-        font-size: 17px;
-        margin-top: 45px;
-        transition: all ease-in-out 0.35s;
-        border: 1px solid $orange;
 
-        &:hover {
-          background-color: #fff;
-          color: $orange;
-        }
+      &__btn {
+        margin-top: 50px;
+        padding: 15px 60px;
+      }
+    }
+    .about {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: start;
+      margin-top: 270px;
+
+      &__content {
+        margin-left: 100px;
+        width: 440px;
+      }
+
+      &__text {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        color: #000000;
+      }
+
+      &__info {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 30px;
+        color: #7d7987;
+        padding: 20px 0 30px 0;
+      }
+
+      &__btn {
+        padding: 15px 38px;
       }
     }
   }
