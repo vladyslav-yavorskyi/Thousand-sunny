@@ -423,5 +423,34 @@ $dark: #202336;
         }
       }
     }
+
+    .guide {
+      display: flex;
+
+      align-items: center;
+      margin-top: 170px;
+
+      &__text {
+        width: 50%;
+      }
+
+      &__title {
+        font-size: 36px;
+        line-height: 50px;
+      }
+
+      &__info {
+        font-family: Mulish;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 30px;
+        color: #7d7987;
+        padding: 20px 80px 40px 0;
+      }
+
+      &__btn {
+        padding: 15px 43px;
+      }
+    }
   }
 }
