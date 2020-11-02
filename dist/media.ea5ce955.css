@@ -1,0 +1,26 @@
+@media (max-width: 1199.98px) {
+  .container {
+    width: 1140px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 960px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: 720px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+
+/*# sourceMappingURL=/media.ea5ce955.css.map */

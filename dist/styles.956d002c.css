@@ -359,24 +359,29 @@ h6 {
 }
 
 .wrapper .content .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   margin-top: 270px;
 }
 
 .wrapper .content .about__content {
   margin-left: 100px;
+  width: 33%;
+}
+
+.wrapper .content .about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
 }
 
 .wrapper .content .about__text {
@@ -499,17 +504,22 @@ h6 {
 }
 
 .wrapper .content .guide {
+  margin-top: 170px;
+}
+
+.wrapper .content .guide__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 170px;
+  width: 100%;
 }
 
 .wrapper .content .guide__text {
-  width: 50%;
+  width: 30%;
+  margin-right: 20%;
 }
 
 .wrapper .content .guide__title {
@@ -523,7 +533,7 @@ h6 {
   font-size: 17px;
   line-height: 30px;
   color: #7d7987;
-  padding: 20px 80px 40px 0;
+  padding: 20px 0 40px 0;
 }
 
 .wrapper .content .guide__btn {

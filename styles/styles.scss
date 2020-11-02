@@ -313,14 +313,19 @@ $dark: #202336;
       }
     }
     .about {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: start;
       margin-top: 270px;
 
       &__content {
         margin-left: 100px;
+        width: 33%;
+      }
+
+      &__row {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: start;
+        width: 100%;
       }
 
       &__text {
@@ -425,13 +430,17 @@ $dark: #202336;
     }
 
     .guide {
-      display: flex;
-
-      align-items: center;
       margin-top: 170px;
 
+      &__row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+
       &__text {
-        width: 50%;
+        width: 30%;
+        margin-right: 20%;
       }
 
       &__title {
@@ -445,7 +454,7 @@ $dark: #202336;
         font-size: 17px;
         line-height: 30px;
         color: #7d7987;
-        padding: 20px 80px 40px 0;
+        padding: 20px 0 40px 0;
       }
 
       &__btn {
