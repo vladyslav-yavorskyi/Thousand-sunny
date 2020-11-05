@@ -685,6 +685,9 @@ h6 {
 }
 
 .wrapper .content .story__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
@@ -718,22 +721,117 @@ h6 {
   font-size: 19px;
   color: #000000;
   padding-top: 10px;
+  line-height: 30px;
 }
 
 .wrapper .content .story__text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding: 15px 0 15px 0;
+  width: 75%;
 }
 
 .wrapper .content .story__text p {
   font-size: 15px;
   color: #7d7987;
+  line-height: 26px;
 }
 
 .wrapper .content .story__link a {
   color: #fb8f1d;
   font-size: 15px;
+}
+
+#footer {
+  background: #f9f9fb;
+  margin-top: 270px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 70px 0 70px 0;
+}
+
+.footer__info {
+  width: 50%;
+}
+
+.footer__text {
+  font-family: Mulish;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #848484;
+  padding: 25px 0 55px 0;
+  width: 50%;
+}
+
+.footer__reserved {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 28px;
+  color: #848484;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.footer__subtitle {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 60px;
+}
+
+.footer__points li {
+  font-family: Mulish;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #848484;
+  cursor: pointer;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #c4c4c4;
+}
+
+.social__row {
+  padding: 32px 0 32px 0;
+}
+
+.social__row a i {
+  color: #000;
+  padding-left: 35px;
+  font-size: 22px;
 }
 
 
